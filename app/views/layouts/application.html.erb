@@ -19,6 +19,11 @@
     </header>
 
     <main>
+        <%= link_to("welcome", welcome_url)%>
+        <%= link_to("about", about_url)%>
+        <%= link_to("contest", contest_url)%>
+        <%= link_to("kittens", kitten_url(500))%>
+        <%= link_to("kitten" , kitten_url(400))%>
       <%= yield %>
     </main>
 

@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
      before_action :set_kitten_url, only: [:kitten, :kittens]
+     # before_action :pages
      def welcome
           render :welcome
           @header = "This is the welcome page"
@@ -35,5 +36,7 @@ class PagesController < ApplicationController
                redirect_to "/welcome"
           end
      end
+     
+
 
 end
