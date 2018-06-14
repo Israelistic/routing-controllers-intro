@@ -2,10 +2,11 @@ class PagesController < ApplicationController
 
      def welcome
           render :welcome
-          # render :about
+
      end
-
-
+     def about
+          render :about
+     end
 
 
 end
