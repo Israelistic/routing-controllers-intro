@@ -25,5 +25,9 @@ class PagesController < ApplicationController
           requested_size = params[:size]
           @kitten_url = "https://picsum.photos/#{requested_size}/#{requested_size}"
      end
+     def contest
+          flash[:notice] = "Sorry, the contest has ended"
+          redirect_to "/welcome"
+     end
 
 end
